@@ -1,0 +1,123 @@
+<?php
+
+
+$a=5;
+ echo "hi ashok \"hello\" $a  <br> ";
+
+ print ("hello indiamart  <br>");
+
+ $name="Cat";  
+$$name="Dog";  
+$$$name="Monkey";  
+echo $name. "<br>";  
+echo $$name. "<br>";  
+echo $Cat. "<br>";  
+echo $$$name. "<br>";  
+echo $Dog. "<br>";  
+
+define("x","5",true);
+  //echo X;
+const msg= "hello ";
+ echo __CLASS__;
+
+$day= array(1,2,3,4,5);
+foreach($day as $a)
+{   echo "the day is: $a <br>";}
+
+
+
+$n=1;  
+while($n<=10){  
+echo "$n<br/>";  
+$n++;  
+}
+   
+
+
+echo "<br>";
+
+
+
+$num=200;      
+switch($num){      
+case 100:      
+echo("number is equals to 100");      
+break;      
+case 200:      
+echo("number is equal to 200");      
+  break;    
+case 50:      
+echo("number is equal to 300");      
+break;      
+default:      
+echo("number is not equal to 100, 200 or 500");      
+}
+
+
+function hello( $name,$age)
+{echo " hello  i am $name <br> $age";}
+  hello("akash",22);
+
+ echo"<br>";
+function add(&$str)
+{
+$str=$str.' this is call by reference';
+}
+$str='hello';
+add($str);
+echo "$str <br>";
+
+  function cube($n)
+{
+return $n*$n*$n;}
+
+echo "<br>".cube(5).",<br>";
+
+$day= array(0=>"sun",1=>"mon",2=>"tue",3=>"wed");
+echo $day[2]."<br>";
+ 
+$temp= array(
+array(1,"sonu",400),
+array(2,"ashok",500),
+array(3,"akash",600));
+   echo "$temp[0][0]  <br>";
+
+$s="My name is Ashok sinGH";
+$s=strtoupper($s);
+$s=strrev($s);
+echo"$s";
+$l=strlen($str);
+echo "<br> $l  <br>";
+  
+echo(sqrt(15));
+
+
+
+
+
+include("hello.php");  
+   
+
+
+?>
+<form  method="get">
+<input type="text" name="name"/>
+<input type="submit" value="visit"/>
+</form>
+
+
+<?php
+$name=$_GET["name"];
+echo"$name <br>";
+ 
+setcookie("cookiename","cookievalue is good");
+$value=$_COOKIE["cookiename"];
+echo"$value <br>";
+
+
+
+
+
+?>
+
+
